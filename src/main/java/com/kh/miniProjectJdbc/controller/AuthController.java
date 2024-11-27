@@ -1,6 +1,6 @@
 package com.kh.miniProjectJdbc.controller;
 
-import com.kh.miniProjectJdbc.vo.MemberVO;
+import com.kh.miniProjectJdbc.vo.MemberVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 	// 로그인
 	@PostMapping("/login")
-	public ResponseEntity<Boolean> login(@RequestBody MemberVO vo) {
+	public ResponseEntity<Boolean> login(@RequestBody MemberVo vo) {
 		log.info("memberVO : {}", vo);
 		return ResponseEntity.ok(true);
 	}
 	// 회원가입
 	@PostMapping("/login/signup")
-	public ResponseEntity<Boolean> signup(@RequestBody MemberVO vo) {
+	public ResponseEntity<Boolean> signup(@RequestBody MemberVo vo) {
 		log.info("memberVO : {}", vo);
 		return ResponseEntity.ok(true);
 	}

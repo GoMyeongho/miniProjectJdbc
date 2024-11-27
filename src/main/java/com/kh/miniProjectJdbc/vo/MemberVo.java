@@ -10,7 +10,7 @@ import java.util.Date;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class MemberVO {
+public class MemberVo {
 	private String email;
 	private String password;
 	private String name;
